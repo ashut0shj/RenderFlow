@@ -1,20 +1,44 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useMemo } from 'react';
+import { SafeAreaView, StyleSheet, StatusBar } from 'react-native';
+import { AppProviders, useTheme } from './src/context';
+import { Header } from './src/components/common';
+import { HomeFeed } from './src/components/layout';
+import { CampaignOverlay, CampaignSwitcher } from './src/components/campaign';
+import homepagePayload from './src/assets/mock/homepage.json';
+import { HomepagePayload } from './src/types/payload.types';
 
-export default function App() {
+const castedPayload = homepagePayload as unknown as HomepagePayload;
+
+function AppContent() {
+  const theme = useTheme();
+
+  const styles = useMemo(() => {
+    return StyleSheet.create({
+      safeArea: {
+        flex: 1,
+        backgroundColor: theme.background || '#FFFFFF',
+      },
+    });
+  }, [theme]);
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.safeArea}>
+      <StatusBar
+        barStyle={theme.background === '#FFFFFF' ? 'dark-content' : 'light-content'}
+        backgroundColor={theme.primary}
+      />
+      <Header />
+      <HomeFeed payload={castedPayload} />
+      <CampaignOverlay />
+      <CampaignSwitcher />
+    </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default function App() {
+  return (
+    <AppProviders initialTheme={castedPayload.theme}>
+      <AppContent />
+    </AppProviders>
+  );
+}
