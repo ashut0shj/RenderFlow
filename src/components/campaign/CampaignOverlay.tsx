@@ -7,10 +7,12 @@ import { cacheLottieAsset } from '../../utils/imageCache';
 const CampaignOverlayComponent: React.FC = () => {
   const { activeCampaign } = useCampaign();
   const [animationSource, setAnimationSource] = useState<object | null>(null);
+  const [isFinished, setIsFinished] = useState(false);
 
   const animationUrl = activeCampaign?.overlayAnimation;
 
   useEffect(() => {
+    setIsFinished(false);
     if (!animationUrl) {
       setAnimationSource(null);
       return;
@@ -32,7 +34,7 @@ const CampaignOverlayComponent: React.FC = () => {
     };
   }, [animationUrl]);
 
-  if (!activeCampaign || !animationUrl || !animationSource) {
+  if (!activeCampaign || !animationUrl || !animationSource || isFinished) {
     return null;
   }
 
@@ -40,7 +42,8 @@ const CampaignOverlayComponent: React.FC = () => {
     <View style={styles.overlay} pointerEvents="none">
       <LottieView
         autoPlay
-        loop
+        loop={false}
+        onAnimationFinish={() => setIsFinished(true)}
         source={animationSource as unknown as React.ComponentProps<typeof LottieView>['source']}
         style={StyleSheet.absoluteFillObject}
       />
