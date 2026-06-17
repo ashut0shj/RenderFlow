@@ -1,3 +1,1 @@
-export const useCart = () => {
-  return null;
-};
+export { useCartStore } from '../context/CartContext';

@@ -1,3 +1,1 @@
-export const useCampaign = () => {
-  return null;
-};
+export { useCampaign } from '../context/CampaignContext';
