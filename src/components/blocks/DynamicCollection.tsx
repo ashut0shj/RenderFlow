@@ -37,9 +37,9 @@ const DynamicCollectionComponent: React.FC<DynamicCollectionProps> = ({ block, o
         height: 80,
         borderRadius: 40,
         overflow: 'hidden',
-        backgroundColor: '#F0F0F0',
+        backgroundColor: theme.surface,
         borderWidth: 2,
-        borderColor: theme.secondary || '#F7C948',
+        borderColor: theme.secondary,
       },
       image: {
         width: '100%',
@@ -48,7 +48,7 @@ const DynamicCollectionComponent: React.FC<DynamicCollectionProps> = ({ block, o
       label: {
         fontSize: 12,
         fontWeight: '600',
-        color: theme.text || '#1A1A1A',
+        color: theme.text,
         marginTop: 6,
         textAlign: 'center',
       },

@@ -13,6 +13,7 @@ export async function cacheLottieAsset(url: string): Promise<object> {
   try {
     const cached = await AsyncStorage.getItem(cacheKey);
     if (cached) {
+      console.log(`[LottieCache] HIT for ${url}`);
       return JSON.parse(cached);
     }
   } catch (err) {

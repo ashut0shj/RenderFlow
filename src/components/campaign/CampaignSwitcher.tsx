@@ -1,10 +1,12 @@
 import React, { useMemo } from 'react';
 import { View, StyleSheet, ScrollView } from 'react-native';
 import { useCampaign } from '../../hooks/useCampaign';
+import { useTheme } from '../../hooks/useTheme';
 import { ThemedButton } from '../common/ThemedButton';
 
 const CampaignSwitcherComponent: React.FC = () => {
   const { setCampaign } = useCampaign();
+  const theme = useTheme();
 
   const styles = useMemo(() => {
     return StyleSheet.create({
@@ -13,11 +15,11 @@ const CampaignSwitcherComponent: React.FC = () => {
         bottom: 24,
         left: 16,
         right: 16,
-        backgroundColor: 'rgba(255, 255, 255, 0.95)',
+        backgroundColor: theme.surface,
         borderRadius: 30,
         paddingVertical: 10,
         paddingHorizontal: 16,
-        shadowColor: '#000',
+        shadowColor: theme.text,
         shadowOffset: { width: 0, height: 4 },
         shadowOpacity: 0.15,
         shadowRadius: 8,
@@ -35,7 +37,7 @@ const CampaignSwitcherComponent: React.FC = () => {
         borderRadius: 20,
       },
     });
-  }, []);
+  }, [theme]);
 
   return (
     <View style={styles.container}>

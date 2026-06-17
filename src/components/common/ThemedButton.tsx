@@ -22,7 +22,7 @@ export const ThemedButton: React.FC<ThemedButtonProps> = React.memo(({ label, on
         justifyContent: 'center',
       },
       text: {
-        color: theme.background || '#FFFFFF',
+        color: theme.background,
         fontSize: 14,
         fontWeight: 'bold',
       },

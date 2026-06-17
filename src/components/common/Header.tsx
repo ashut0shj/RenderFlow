@@ -10,7 +10,7 @@ const CartBadge: React.FC = () => {
   const styles = useMemo(() => {
     return StyleSheet.create({
       badge: {
-        backgroundColor: theme.accent || '#E63946',
+        backgroundColor: theme.accent,
         borderRadius: 10,
         minWidth: 20,
         height: 20,
@@ -20,7 +20,7 @@ const CartBadge: React.FC = () => {
         marginLeft: 6,
       },
       text: {
-        color: '#FFFFFF',
+        color: theme.background,
         fontSize: 10,
         fontWeight: 'bold',
       },
@@ -49,7 +49,7 @@ export const Header: React.FC = () => {
         justifyContent: 'space-between',
         paddingHorizontal: 16,
         elevation: 4,
-        shadowColor: '#000',
+        shadowColor: theme.text,
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.15,
         shadowRadius: 3,
@@ -57,7 +57,7 @@ export const Header: React.FC = () => {
       title: {
         fontSize: 18,
         fontWeight: '800',
-        color: theme.background || '#FFFFFF',
+        color: theme.background,
       },
       rightSection: {
         flexDirection: 'row',
