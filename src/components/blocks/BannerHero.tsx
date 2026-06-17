@@ -30,7 +30,7 @@ const BannerHeroComponent: React.FC<BannerHeroProps> = ({ block, onAction }) => 
         height: '100%',
       },
       overlay: {
-        ...StyleSheet.absoluteFill,
+        ...StyleSheet.absoluteFillObject,
         backgroundColor: 'rgba(0, 0, 0, 0.45)',
         justifyContent: 'center',
         paddingHorizontal: 20,

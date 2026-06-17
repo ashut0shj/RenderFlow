@@ -48,7 +48,7 @@ const CampaignOverlayComponent: React.FC = () => {
 
 const styles = StyleSheet.create({
   overlay: {
-    ...StyleSheet.absoluteFill,
+    ...StyleSheet.absoluteFillObject,
     zIndex: 9999,
   },
 });
