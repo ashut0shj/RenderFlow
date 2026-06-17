@@ -1,0 +1,397 @@
+{
+  "theme": {
+    "primary": "#FF9933",
+    "secondary": "#F7C948",
+    "background": "#FFF5E6",
+    "surface": "#FFFFFF",
+    "text": "#1A1A1A",
+    "accent": "#E63946"
+  },
+  "campaign": null,
+  "blocks": [
+    {
+      "id": "banner-hero-summer-sale",
+      "type": "BANNER_HERO",
+      "visible": true,
+      "imageUrl": "https://picsum.photos/seed/summersale/600/300",
+      "title": "Summer Kids Carnival!",
+      "subtitle": "Flat 40% Off on Baby & Children Essentials",
+      "ctaLabel": "Shop Now",
+      "action": {
+        "type": "DEEP_LINK",
+        "payload": {
+          "url": "kiddo://campaign/summer-sale"
+        }
+      }
+    },
+    {
+      "id": "collection-summer-essentials",
+      "type": "DYNAMIC_COLLECTION",
+      "visible": true,
+      "title": "Summer Essentials",
+      "items": [
+        {
+          "id": "item-sunscreen",
+          "label": "Sunscreen",
+          "imageUrl": "https://picsum.photos/seed/sunscreen/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "kids-sunscreen"
+            }
+          }
+        },
+        {
+          "id": "item-swimwear",
+          "label": "Swimwear",
+          "imageUrl": "https://picsum.photos/seed/swimwear/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "kids-swimwear"
+            }
+          }
+        },
+        {
+          "id": "item-hats",
+          "label": "Summer Hats",
+          "imageUrl": "https://picsum.photos/seed/hats/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "kids-hats"
+            }
+          }
+        },
+        {
+          "id": "item-shades",
+          "label": "Sunglasses",
+          "imageUrl": "https://picsum.photos/seed/shades/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "kids-sunglasses"
+            }
+          }
+        },
+        {
+          "id": "item-pooltoys",
+          "label": "Pool Toys",
+          "imageUrl": "https://picsum.photos/seed/pooltoys/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "pool-toys"
+            }
+          }
+        },
+        {
+          "id": "item-sippers",
+          "label": "Water Bottles",
+          "imageUrl": "https://picsum.photos/seed/sippers/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "kids-bottles"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "grid-top-picks",
+      "type": "PRODUCT_GRID_2X2",
+      "visible": true,
+      "title": "Top Picks",
+      "products": [
+        {
+          "id": "prod-baby-wipes",
+          "name": "Organic Bamboo Baby Wipes (80 units)",
+          "price": 299,
+          "imageUrl": "https://picsum.photos/seed/wipes/200/200",
+          "badge": "Best Seller",
+          "rating": 4.8,
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "prod-baby-wipes",
+              "quantity": 1
+            }
+          }
+        },
+        {
+          "id": "prod-wooden-rattle",
+          "name": "Natural Neem Wood Rattle Toy",
+          "price": 399,
+          "imageUrl": "https://picsum.photos/seed/rattle/200/200",
+          "badge": "Eco Friendly",
+          "rating": 4.5,
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "prod-wooden-rattle",
+              "quantity": 1
+            }
+          }
+        },
+        {
+          "id": "prod-baby-bodywash",
+          "name": "Tear-Free Gentle Baby Wash 200ml",
+          "price": 349,
+          "imageUrl": "https://picsum.photos/seed/bodywash/200/200",
+          "rating": 4.7,
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "prod-baby-bodywash",
+              "quantity": 1
+            }
+          }
+        },
+        {
+          "id": "prod-silicone-bib",
+          "name": "Waterproof Food-Grade Silicone Bib",
+          "price": 249,
+          "imageUrl": "https://picsum.photos/seed/bib/200/200",
+          "rating": 4.2,
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "prod-silicone-bib",
+              "quantity": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "collection-snacks-under-99",
+      "type": "DYNAMIC_COLLECTION",
+      "visible": true,
+      "title": "Snacks under ₹99",
+      "items": [
+        {
+          "id": "snack-ragi-cookies",
+          "label": "Ragi Cookies",
+          "imageUrl": "https://picsum.photos/seed/ragicookies/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "healthy-snacks"
+            }
+          }
+        },
+        {
+          "id": "snack-fruit-puree",
+          "label": "Apple Puree",
+          "imageUrl": "https://picsum.photos/seed/applepuree/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "baby-food"
+            }
+          }
+        },
+        {
+          "id": "snack-makhana",
+          "label": "Roasted Makhana",
+          "imageUrl": "https://picsum.photos/seed/makhana/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "healthy-snacks"
+            }
+          }
+        },
+        {
+          "id": "snack-banana-chips",
+          "label": "Banana Chips",
+          "imageUrl": "https://picsum.photos/seed/bananachips/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "healthy-snacks"
+            }
+          }
+        },
+        {
+          "id": "snack-yogurt-melts",
+          "label": "Yogurt Melts",
+          "imageUrl": "https://picsum.photos/seed/yogurtmelts/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "baby-food"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "banner-hero-flash-deal",
+      "type": "BANNER_HERO",
+      "visible": true,
+      "imageUrl": "https://picsum.photos/seed/flashdeal/600/300",
+      "title": "Lightning Flash Deal!",
+      "subtitle": "Extra 15% off on diapers for the next 2 hours",
+      "ctaLabel": "Claim Deal",
+      "action": {
+        "type": "DEEP_LINK",
+        "payload": {
+          "url": "kiddo://deal/diaper-flash"
+        }
+      }
+    },
+    {
+      "id": "grid-new-arrivals",
+      "type": "PRODUCT_GRID_2X2",
+      "visible": true,
+      "title": "New Arrivals",
+      "products": [
+        {
+          "id": "prod-plush-bear",
+          "name": "Super Soft Teddy Bear (Large)",
+          "price": 899,
+          "imageUrl": "https://picsum.photos/seed/plushbear/200/200",
+          "badge": "New",
+          "rating": 4.9,
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "prod-plush-bear",
+              "quantity": 1
+            }
+          }
+        },
+        {
+          "id": "prod-baby-stroller",
+          "name": "Lightweight Foldable Baby Stroller",
+          "price": 4999,
+          "imageUrl": "https://picsum.photos/seed/stroller/200/200",
+          "badge": "Premium",
+          "rating": 4.6,
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "prod-baby-stroller",
+              "quantity": 1
+            }
+          }
+        },
+        {
+          "id": "prod-stacking-rings",
+          "name": "Rainbow Stacking Rings Classic Toy",
+          "price": 249,
+          "imageUrl": "https://picsum.photos/seed/stackingrings/200/200",
+          "rating": 4.4,
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "prod-stacking-rings",
+              "quantity": 1
+            }
+          }
+        },
+        {
+          "id": "prod-teething-toy",
+          "name": "BPA-Free Silicone Teething Ring",
+          "price": 199,
+          "imageUrl": "https://picsum.photos/seed/teething/200/200",
+          "rating": 4.3,
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "prod-teething-toy",
+              "quantity": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "unsupported-block-id",
+      "type": "NEW_COMPONENT_V2",
+      "visible": true,
+      "action": {
+        "type": "DEEP_LINK",
+        "payload": {
+          "url": "kiddo://fallback"
+        }
+      }
+    },
+    {
+      "id": "collection-lunchboxes-bags",
+      "type": "DYNAMIC_COLLECTION",
+      "visible": true,
+      "title": "Lunchboxes & Bags",
+      "items": [
+        {
+          "id": "bag-dino-backpack",
+          "label": "Dino Backpack",
+          "imageUrl": "https://picsum.photos/seed/dinobag/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "school-bags"
+            }
+          }
+        },
+        {
+          "id": "bag-insulated-lunchbox",
+          "label": "Steel Lunchbox",
+          "imageUrl": "https://picsum.photos/seed/lunchbox/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "lunchboxes"
+            }
+          }
+        },
+        {
+          "id": "bag-unicorn-backpack",
+          "label": "Unicorn Bag",
+          "imageUrl": "https://picsum.photos/seed/unicornbag/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "school-bags"
+            }
+          }
+        },
+        {
+          "id": "bag-snack-pouch",
+          "label": "Snack Pouch",
+          "imageUrl": "https://picsum.photos/seed/snackpouch/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "lunchboxes"
+            }
+          }
+        },
+        {
+          "id": "bag-waterbottle-sleeve",
+          "label": "Bottle Sleeve",
+          "imageUrl": "https://picsum.photos/seed/bottlesleeve/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "kids-bottles"
+            }
+          }
+        },
+        {
+          "id": "bag-pencil-case",
+          "label": "Pencil Case",
+          "imageUrl": "https://picsum.photos/seed/pencilcase/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "stationery"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

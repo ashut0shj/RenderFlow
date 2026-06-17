@@ -1,0 +1,78 @@
+{
+  "id": "BACK_TO_SCHOOL",
+  "theme": {
+    "primary": "#F7C948",
+    "secondary": "#1565C0",
+    "background": "#FFFDE7",
+    "surface": "#E3F2FD",
+    "text": "#0D47A1",
+    "accent": "#F7C948"
+  },
+  "overlayType": "FULL_SCREEN_OVERLAY",
+  "overlayAnimation": "https://assets.lottiefiles.com/packages/lf20_kkflmtur.json",
+  "specialRows": [
+    {
+      "id": "campaign-lunchboxes-bags",
+      "type": "DYNAMIC_COLLECTION",
+      "visible": true,
+      "title": "Lunchboxes & Bags",
+      "items": [
+        {
+          "id": "bts-dino-backpack",
+          "label": "Dino Backpack",
+          "imageUrl": "https://picsum.photos/seed/bts-dinobag/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "school-bags"
+            }
+          }
+        },
+        {
+          "id": "bts-steel-lunchbox",
+          "label": "Steel Lunchbox",
+          "imageUrl": "https://picsum.photos/seed/bts-lunchbox/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "lunchboxes"
+            }
+          }
+        },
+        {
+          "id": "bts-unicorn-backpack",
+          "label": "Unicorn Bag",
+          "imageUrl": "https://picsum.photos/seed/bts-unicornbag/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "school-bags"
+            }
+          }
+        },
+        {
+          "id": "bts-snack-pouch",
+          "label": "Snack Pouch",
+          "imageUrl": "https://picsum.photos/seed/bts-snackpouch/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "lunchboxes"
+            }
+          }
+        },
+        {
+          "id": "bts-pencil-case",
+          "label": "Pencil Case",
+          "imageUrl": "https://picsum.photos/seed/bts-pencilcase/120/120",
+          "action": {
+            "type": "NAVIGATE_CATEGORY",
+            "payload": {
+              "categorySlug": "stationery"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

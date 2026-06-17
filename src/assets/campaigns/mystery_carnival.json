@@ -1,0 +1,78 @@
+{
+  "id": "MYSTERY_CARNIVAL",
+  "theme": {
+    "primary": "#E53935",
+    "secondary": "#FF8F00",
+    "background": "#FFF3E0",
+    "surface": "#FFEBEE",
+    "text": "#B71C1C",
+    "accent": "#FFD600"
+  },
+  "overlayType": "FULL_SCREEN_OVERLAY",
+  "overlayAnimation": "https://assets.lottiefiles.com/packages/lf20_obhph3sh.json",
+  "specialRows": [
+    {
+      "id": "campaign-mystery-gifts",
+      "type": "DYNAMIC_COLLECTION",
+      "visible": true,
+      "title": "Mystery Gifts",
+      "items": [
+        {
+          "id": "gift-magicbox",
+          "label": "Magic Gift Box",
+          "imageUrl": "https://picsum.photos/seed/magicbox/120/120",
+          "action": {
+            "type": "APPLY_MYSTERY_GIFT_COUPON",
+            "payload": {
+              "couponCode": "MAGIC50"
+            }
+          }
+        },
+        {
+          "id": "gift-goldencookie",
+          "label": "Golden Cookie Ticket",
+          "imageUrl": "https://picsum.photos/seed/goldencookie/120/120",
+          "action": {
+            "type": "APPLY_MYSTERY_GIFT_COUPON",
+            "payload": {
+              "couponCode": "FREECOOKIE"
+            }
+          }
+        },
+        {
+          "id": "gift-treasurechest",
+          "label": "Treasure Chest Deal",
+          "imageUrl": "https://picsum.photos/seed/treasurechest/120/120",
+          "action": {
+            "type": "APPLY_MYSTERY_GIFT_COUPON",
+            "payload": {
+              "couponCode": "TREASURE99"
+            }
+          }
+        },
+        {
+          "id": "gift-secrettoy",
+          "label": "Secret Toy Voucher",
+          "imageUrl": "https://picsum.photos/seed/secrettoy/120/120",
+          "action": {
+            "type": "APPLY_MYSTERY_GIFT_COUPON",
+            "payload": {
+              "couponCode": "TOYBOX"
+            }
+          }
+        },
+        {
+          "id": "gift-mysterypass",
+          "label": "Mystery Freebie Pass",
+          "imageUrl": "https://picsum.photos/seed/mysterypass/120/120",
+          "action": {
+            "type": "APPLY_MYSTERY_GIFT_COUPON",
+            "payload": {
+              "couponCode": "FREEBIE"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

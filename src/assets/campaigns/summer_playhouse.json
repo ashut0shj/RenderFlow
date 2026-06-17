@@ -1,0 +1,56 @@
+{
+  "id": "SUMMER_PLAYHOUSE",
+  "theme": {
+    "primary": "#0288D1",
+    "secondary": "#81D4FA",
+    "background": "#E1F5FE",
+    "surface": "#FFFFFF",
+    "text": "#01579B",
+    "accent": "#FFD600"
+  },
+  "overlayType": "FULL_SCREEN_OVERLAY",
+  "overlayAnimation": "https://assets.lottiefiles.com/packages/lf20_qp1q7mct.json",
+  "specialRows": [
+    {
+      "id": "campaign-petting-zoo",
+      "type": "DYNAMIC_COLLECTION",
+      "visible": true,
+      "title": "Petting Zoo Tickets",
+      "items": [
+        {
+          "id": "zoo-feeding-pass",
+          "label": "Animal Feeding Pass",
+          "imageUrl": "https://picsum.photos/seed/feedingpass/120/120",
+          "action": {
+            "type": "OPEN_BOOKING",
+            "payload": {
+              "eventId": "evt-zoo-feeding"
+            }
+          }
+        },
+        {
+          "id": "zoo-entry-ticket",
+          "label": "Zoo Entry Ticket",
+          "imageUrl": "https://picsum.photos/seed/zooticket/120/120",
+          "action": {
+            "type": "OPEN_BOOKING",
+            "payload": {
+              "eventId": "evt-zoo-entry"
+            }
+          }
+        },
+        {
+          "id": "zoo-pony-ride",
+          "label": "Pony Ride Booking",
+          "imageUrl": "https://picsum.photos/seed/ponyride/120/120",
+          "action": {
+            "type": "OPEN_BOOKING",
+            "payload": {
+              "eventId": "evt-zoo-pony"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
