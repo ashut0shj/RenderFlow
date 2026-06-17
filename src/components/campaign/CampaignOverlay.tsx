@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import LottieView from 'lottie-react-native';
 import { useCampaign } from '../../hooks/useCampaign';
 import { cacheLottieAsset } from '../../utils/imageCache';
@@ -37,12 +37,14 @@ const CampaignOverlayComponent: React.FC = () => {
   }
 
   return (
-    <LottieView
-      autoPlay
-      loop
-      source={animationSource as unknown as React.ComponentProps<typeof LottieView>['source']}
-      style={[styles.overlay, { pointerEvents: 'none' }]}
-    />
+    <View style={styles.overlay} pointerEvents="none">
+      <LottieView
+        autoPlay
+        loop
+        source={animationSource as unknown as React.ComponentProps<typeof LottieView>['source']}
+        style={StyleSheet.absoluteFillObject}
+      />
+    </View>
   );
 };
 
