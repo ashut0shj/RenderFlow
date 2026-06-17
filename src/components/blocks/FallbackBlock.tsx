@@ -1,6 +1,17 @@
-import React from 'react';
-import { View } from 'react-native';
+import React, { useEffect } from 'react';
 
-export const FallbackBlock: React.FC<any> = () => {
-  return <View />;
+interface FallbackBlockProps {
+  blockType: string;
+}
+
+const FallbackBlockComponent: React.FC<FallbackBlockProps> = ({ blockType }) => {
+  useEffect(() => {
+    if (__DEV__) {
+      console.warn(`[SDUI] Unknown block type dropped: "${blockType}"`);
+    }
+  }, [blockType]);
+
+  return null;
 };
+
+export const FallbackBlock = React.memo(FallbackBlockComponent);
