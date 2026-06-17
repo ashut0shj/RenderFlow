@@ -62,3 +62,11 @@ export interface HomepagePayload {
   campaign?: CampaignConfig;
   blocks: SDUIBlock[];
 }
+
+export type HomepageBlock = SDUIBlock;
+
+export interface BlockRendererProps {
+  block: HomepageBlock;
+  onAction: (action: ActionObject) => void;
+}
+
